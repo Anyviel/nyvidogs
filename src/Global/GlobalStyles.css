@@ -1,0 +1,54 @@
+:root {
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'Spectral', Georgia;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0px;
+  padding-top: 4rem;
+
+  font-family: var(--type-first);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input {
+  display: block;
+
+  color: #333;
+  font-size: 1rem;
+  font-family: var(--type-first);
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
