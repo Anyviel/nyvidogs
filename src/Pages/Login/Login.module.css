@@ -1,0 +1,82 @@
+.form {
+  margin-bottom: 2rem;
+}
+
+.perdeu {
+  display: inline-block;
+
+  color: #666;
+  padding: .5rem 0;
+
+  line-height: 1;
+}
+
+.perdeu::after {
+  content: '';
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  background: currentColor;
+}
+
+.cadastro {
+  margin-top: 4rem;
+}
+
+.cadastro p {
+  margin: 2rem 0;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-family: var(--type-second);
+  line-height: 1;
+}
+
+.subtitle::after {
+  content: '';
+  display: block;
+
+  background: #ddd;
+
+  width: 3rem;
+  height: .5rem;
+
+  border-radius: .2rem;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  min-height: 100vh;
+}
+
+.login::before {
+  content: '';
+  display: block;
+  background: url('../../Assets/login.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.forms {
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+@media (max-width: 40rem) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+
+  .login::before {
+    display: none;
+  }
+
+  .forms {
+    max-width: 100%;
+  }
+}
