@@ -33,6 +33,7 @@ li {
 }
 
 a {
+  color: unset;
   text-decoration: none;
 }
 
@@ -55,9 +56,14 @@ button, input {
   padding: 0 1rem;
 }
 
+.mainContainer {
+  margin-top: 4rem;
+}
+
 .title {
   position: relative;
 
+  color: #333;
   font-size: 3rem;
   font-family: var(--type-second);
   line-height: 1;
