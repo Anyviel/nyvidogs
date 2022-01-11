@@ -30,6 +30,7 @@
 }
 
 .img {
+  display: flex;
   grid-row: 1 / 4;
 }
 
@@ -53,6 +54,34 @@
   height: 10px;
   margin-right: .5rem;
   background: url('../../Assets/visualizacao-black.svg');
+}
+
+.description {
+  position: relative;
+  font-size: 1rem;
+
+  margin-left: 10px;
+
+  width: 100%;
+  opacity: .8;
+}
+
+.description::before {
+  content: '';
+
+  position: absolute;
+
+  width: 2px;
+  height: 100%;
+
+  border-radius: 2px;
+
+  left: -10px;
+  bottom: 0;
+
+  background: #333;
+
+  z-index: -1;
 }
 
 .attributes {
