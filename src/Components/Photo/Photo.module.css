@@ -126,3 +126,28 @@
     grid-row: 1;
   }
 }
+
+/*Photo Delete*/
+
+.delete {
+  cursor: pointer;
+  background: #ddd;
+  padding: .3rem .6rem;
+  
+  border: 1px solid transparent;
+  border-radius: .4rem;
+  
+  font-size: .875rem;
+  font-family: var(--type-first);;
+  line-height: 1;
+
+  transition: .2s;
+}
+
+.delete:focus,
+.delete:hover {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+}
