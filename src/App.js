@@ -9,6 +9,8 @@ import Footer from "./Components/Footer/Footer";
 import './Global/GlobalStyles.css';
 import { UserStorage } from "./Context/UserContext";
 import ProtectedRoute from "./Helpers/ProtectedRoute";
+import Photo from "./Components/Photo/Photo";
+import UserProfile from "./Pages/User/UserProfile";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              <Route path="photo/:id" element={<Photo />} />
+              <Route path="profile/:user" element={<UserProfile />} />
             </Routes>
           <Footer />
         </UserStorage>

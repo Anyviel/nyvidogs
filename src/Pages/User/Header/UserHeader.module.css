@@ -112,6 +112,8 @@
   transform: initial;
 
   pointer-events: initial;
+
+  z-index: 10000;
 }
 
 /* Mobile Hamburger*/

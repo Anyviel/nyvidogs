@@ -21,3 +21,9 @@
     padding: 2rem calc(2rem + 15px) 2rem 2rem;
   }
 }
+
+@media (max-width: 36rem) {
+  .modal {
+    padding: 1rem;
+  }
+}

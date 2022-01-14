@@ -4,9 +4,19 @@
   padding: 0 2rem;
 }
 
+.single.comments {
+  padding: 0;
+}
+
 .comments li {
   line-height: 1.2;
   margin-bottom: .5rem;
+}
+
+.single.comments li {
+  padding: 1rem;
+  background: #eee;
+  border-radius: 1rem;
 }
 
 /*Form*/
@@ -16,6 +26,10 @@
   grid-template-columns: 1fr auto;
   align-items: stretch;
   margin: 1rem;
+}
+
+.single.form {
+  margin: 1rem 0;
 }
 
 .textarea {
@@ -32,6 +46,11 @@
   resize: none;
 
   transition: .2s;
+}
+
+.single .textarea {
+  padding: .8rem;
+  border-radius: 1rem;
 }
 
 .textarea:focus,
