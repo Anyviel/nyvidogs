@@ -70,7 +70,7 @@ ul:first-child .photo:nth-child(2) {
 }
 
 @media (max-width: 40rem) {
-  .photo:nth-child(2) {
+  ul:first-child .photo:nth-child(2) {
     grid-column: initial;
     grid-row: initial;
   }

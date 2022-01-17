@@ -10,6 +10,7 @@ import Error from '../../Helpers/Error';
 
 import { PASSWORD_RESET } from '../../api';
 import { Navigate } from 'react-router-dom';
+import Head from '../../Helpers/Head';
 
 
 const LoginPasswordReset = () => {
@@ -48,7 +49,8 @@ const LoginPasswordReset = () => {
 
   return (
     <div>
-     <h1 className="title">Troque sua Senha</h1>
+      <Head title="Resete sua senha" description="Site Dogs - Um lar de cachorros sem igual" />
+      <h1 className="title">Troque sua Senha</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Nova Senha" type="password" name="password" {...password} />
         {loading ? (

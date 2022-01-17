@@ -10,6 +10,7 @@ import { useFetch } from '../../../Hooks/useFetch';
 
 import styles from './UserPhotoPost.module.css';
 import { useNavigate } from 'react-router-dom';
+import Head from '../../../Helpers/Head';
 
 const UserPhotoPost = () => {
 
@@ -53,6 +54,7 @@ const UserPhotoPost = () => {
 
   return (
     <section className={`${styles.photoPost} animeLeft`}>
+      <Head title="Poste sua foto" description="Home do Site Dogs - Um lar de cachorros sem igual" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="number" name="peso" {...peso} />

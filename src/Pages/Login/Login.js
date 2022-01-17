@@ -10,6 +10,7 @@ import LoginPasswordReset from './LoginPasswordReset';
 import { UserContext } from '../../Context/UserContext';
 
 import styles from './Login.module.css';
+import Head from '../../Helpers/Head';
 
 const Login = () => {
 
@@ -19,6 +20,7 @@ const Login = () => {
 
   return (
     <section className={styles.login}>
+      <Head title="Login" description="Site Dogs - Um lar de cachorros sem igual" />
       <div className={styles.forms}>
         <Routes>
           <Route path="/" element={<LoginForm />} />

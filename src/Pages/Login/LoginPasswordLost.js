@@ -9,6 +9,7 @@ import { useFetch } from '../../Hooks/useFetch';
 import Error from '../../Helpers/Error';
 
 import { PASSWORD_LOST } from '../../api';
+import Head from '../../Helpers/Head';
 
 const LoginPasswordLost = () => {
 
@@ -31,6 +32,7 @@ const LoginPasswordLost = () => {
   return (
     
     <section>
+      <Head title="Perdeu a Senha?" description="Home do Site Dogs - Um lar de cachorros sem igual" />
       <h1 className="title">Perdeu a Senha?</h1>
       {data ? <p style={{color: '#4c1'}}>{data}</p> : (
         <form onSubmit={handleSubmit}>
