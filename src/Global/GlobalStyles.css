@@ -50,6 +50,16 @@ button, input {
   font-family: var(--type-first);
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
 .container {
   max-width: 60rem;
   margin: 0 auto;
@@ -120,4 +130,8 @@ p.error {
     width: 1rem;
     height: 1rem;
   }
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

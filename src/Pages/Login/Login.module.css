@@ -23,6 +23,7 @@
 
 .cadastro {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .cadastro p {
@@ -65,6 +66,7 @@
 .forms {
   max-width: 30rem;
   padding: 1rem;
+  margin-top: 20vh;
 }
 
 @media (max-width: 40rem) {
